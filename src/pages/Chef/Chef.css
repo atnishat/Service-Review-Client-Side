@@ -1,0 +1,21 @@
+.chef{
+    display: flex;
+    margin-top: 50px;
+}
+.chef1 {
+    width: 300px;
+    height: 220px;
+    margin-left: 40px;
+}
+.chef1 img{
+    width: 250px;
+    height: 200px;
+    border-radius: 30px;
+}
+.chef-title{
+    
+}
+.chef-title p{
+    margin-top: 50px;
+    text-align: center;
+}

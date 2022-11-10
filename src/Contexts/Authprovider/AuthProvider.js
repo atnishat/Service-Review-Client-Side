@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import {createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth'
+import {createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut} from 'firebase/auth'
 import app from '../../firebase/Firebase.config';
 
  export const AuthContext = createContext();
@@ -10,12 +10,15 @@ const Authprovider = ({children}) => {
 
 
     const createUser = (email, password) => {
-        // setLoading(true);
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
     const login = (email, password) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password);
+    }
+    const logOut = () =>{
+        return signOut(auth);
     }
 
 
@@ -23,7 +26,7 @@ const Authprovider = ({children}) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             console.log(currentUser);
             setUser(currentUser);
-            // setLoading(false);
+            setLoading(false);
         });
         return () => {
             return unsubscribe();
@@ -37,7 +40,8 @@ const Authprovider = ({children}) => {
             user,
             loading,
             login,
-            createUser
+            createUser,
+            logOut
     }
 
 

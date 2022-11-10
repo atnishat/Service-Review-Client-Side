@@ -1,72 +1,72 @@
 [
     {
-        "_id": "635a0c0b64a6d231228942ae",
+        
         "service_id": "04",
         "title": "Buffet service",
         "img": "https://st3.depositphotos.com/1672917/18225/i/1600/depositphotos_182254214-stock-photo-self-service-restaurant-view-different.jpg",
         "price": "$200",
         "description": "In a buffet service, guests can choose their food from a wider selection made available on the buffet line.",
-        "facility": [
+        "facility": 
             {
                 "rating": "5.0",
                 "types": "Thai, Indian, Chines etc"
             }
-        ]
+        
     },
     {
-        "_id": "635a0c0b64a6d231228942af",
+        
         "service_id": "05",
         "title": "Semi-self service",
         "img": "https://cdn.w600.comps.canstockphoto.com/various-ready-made-meals-on-the-counter-stock-photography_csp68583007.jpg",
         "price": "$150",
         "description": "In this type of food service, diners place, pay, and pick up their orders at a counter similar to fast casual and fast-food establishments. ",
-        "facility": [
+        "facility": 
             {
                 "rating": "3.0",
                 "types": "Thai, Indian, Chines etc"
             }
-        ]
+        
     },
     {
-        "_id": "635b591a1dafe382a9da8c96",
+        
         "service_id": "01",
         "title": "Self-service",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToRI2y_fCgWB9WSOAvm2SgYNvcVDsfhdbdjg&usqp=CAU",
         "price": "$100",
         "description": "Similar to self-service, this type of service requires diners to order and pay for their orders at the counter but waiters serve the food when ready.",
-        "facility": [
+        "facility": 
             {
                 "rating": "4.0",
                 "types": "Thai, Indian, Chines etc"
             }
-        ]
+        
     },
     {
-        "_id": "635b5afc1dafe382a9da8c98",
+        
         "service_id": "02",
         "title": "Chinese banquet service",
         "img": "https://i.ibb.co/5MvmD2g/88.jpg",
         "price": "$120",
         "description": "This is another form of waiter service where each waiter takes care of a table or group of tables with 10-12 guests. Dishes are usually communal and shared.",
-        "facility": [
+        "facility": 
             {
                 "rating": "3.5",
                 "types": "Thai, Indian, Chines etc"
             }
-        ]
+        
     },
     {
-        "_id": "635b5b691dafe382a9da8c99",
+        
         "service_id": "03",
         "title": "Waiter service",
         "img": "https://i.ibb.co/wh7t3N3/555.jpg",
         "price": "$200",
         "description": "More commonly known as sit-down service, this type of service requires a waiter to take care of everything from taking orders to serving food and payment.",
-        "facility": [
+        "facility": 
             {
                 "rating": "4.5",
                 "types": "Thai, Indian, Chines etc"
             }
-        ]
+        
     }
 ]

@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Services.css';
 
-const ServiceCard = ({service}) => {
-
+const AllserviceCard = ({service}) => {
+    // console.log(service);
     const {img ,title,price,_id,facility,description }= service;
-
     return (
         <div className="card card-compact w-96 bg-base-800 shadow-xl mt-10">
         <figure className='figure-img'><img src={img} alt="Shoes" /></figure>
@@ -17,8 +15,11 @@ const ServiceCard = ({service}) => {
             </div>
             <p className='text-sm text-white-600 font-semibold'>{description}</p>
             <div className="card-actions justify-end">
-            <Link to='/services'>
-                        <button className="btn btn-primary">See All</button>
+
+
+            
+            <Link to={`/checkouts/${_id}`}>
+            <button className="btn btn-primary">View Details</button>
                     </Link>
             </div>
         </div>
@@ -26,4 +27,4 @@ const ServiceCard = ({service}) => {
     );
 };
 
-export default ServiceCard;
+export default AllserviceCard;
